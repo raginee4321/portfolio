@@ -1,5 +1,28 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaJava,
+  FaDatabase,
+  FaGitAlt,
+  FaGithub,
+  FaCode,
+  FaCuttlefish,
+  FaLaptopCode,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiMysql,
+  SiVisualstudiocode,
+  SiPycharm,
+} from "react-icons/si";
+import { TbBrandMysql } from "react-icons/tb";
 
 export const About = () => {
   return (
@@ -32,22 +55,31 @@ export const About = () => {
           {/* Skills */}
           <div className="card p-6 bg-gray-800 rounded-2xl shadow-md">
             <h3 className="font-bold text-xl mb-2 text-indigo-400">Skills</h3>
-            <ul className="text-gray-300 mt-2 list-disc list-inside space-y-1">
-              <li>HTML5 / CSS3 (Flexbox, Grid)</li>
-              <li>JavaScript (ES6+)</li>
-              <li>React.js / Next.js</li>
-              <li>Tailwind CSS</li>
-              <li>Responsive Web Design</li>
-              <li>Basic Node.js / Express.js understanding</li>
+            <ul className="text-gray-300 mt-2 space-y-2">
+              <li className="flex items-center gap-2"><FaHtml5 className="text-orange-500" /> HTML5 / CSS3 (Flexbox, Grid)</li>
+              <li className="flex items-center gap-2"><FaJs className="text-yellow-400" /> JavaScript (ES6+)</li>
+              <li className="flex items-center gap-2"><FaReact className="text-cyan-400" /> React.js / <SiNextdotjs className="text-gray-200" /> Next.js</li>
+              <li className="flex items-center gap-2"><SiTailwindcss className="text-sky-400" /> Tailwind CSS</li>
+              <li className="flex items-center gap-2"><FaCode className="text-gray-300" /> Responsive Web Design</li>
+              <li className="flex items-center gap-2"><FaNodeJs className="text-green-500" /> Basic Node.js / Express.js understanding</li>
+              <li className="flex items-center gap-2"><SiMongodb className="text-green-400" /> MongoDB</li>
+              <li className="flex items-center gap-2"><SiMysql className="text-blue-400" /> MySQL</li>
+              <li className="flex items-center gap-2"><FaCuttlefish className="text-blue-300" /> C++</li>
+              <li className="flex items-center gap-2"><FaJava className="text-red-500" /> Java</li>
+              <li className="flex items-center gap-2"><FaPython className="text-yellow-300" /> Python</li>
             </ul>
           </div>
 
           {/* Tools */}
           <div className="card p-6 bg-gray-800 rounded-2xl shadow-md">
             <h3 className="font-bold text-xl mb-2 text-indigo-400">Tools</h3>
-            <ul className="text-gray-300 mt-2 list-disc list-inside space-y-1">
-              <li>VS Code</li>
-              <li>Git / GitHub</li>
+            <ul className="text-gray-300 mt-2 space-y-2">
+              <li className="flex items-center gap-2"><SiVisualstudiocode className="text-blue-400" /> VS Code</li>
+              <li className="flex items-center gap-2"><SiPycharm className="text-green-400" /> PyCharm</li>
+              <li className="flex items-center gap-2"><FaLaptopCode className="text-blue-300" /> Turbo C++</li>
+              <li className="flex items-center gap-2"><TbBrandMysql className="text-sky-400" /> MySQL Workbench</li>
+              <li className="flex items-center gap-2"><FaGitAlt className="text-orange-400" /> Git</li>
+              <li className="flex items-center gap-2"><FaGithub className="text-white" /> GitHub</li>
             </ul>
           </div>
 
@@ -55,7 +87,7 @@ export const About = () => {
           <div className="card p-6 bg-gray-800 rounded-2xl shadow-md">
             <h3 className="font-bold text-xl mb-2 text-indigo-400">Education</h3>
             <p className="text-gray-300 mt-2">
-              <strong>BCS – Bachelor of Computer Science</strong>
+              🎓 <strong>BCS – Bachelor of Computer Science</strong>
             </p>
           </div>
         </div>
