@@ -77,7 +77,6 @@ export const About = () => {
               <li className="flex items-center gap-2"><SiVisualstudiocode className="text-blue-400" /> VS Code</li>
               <li className="flex items-center gap-2"><SiPycharm className="text-green-400" /> PyCharm</li>
               <li className="flex items-center gap-2"><FaLaptopCode className="text-blue-300" /> Turbo C++</li>
-              <li className="flex items-center gap-2"><TbBrandMysql className="text-sky-400" /> MySQL Workbench</li>
               <li className="flex items-center gap-2"><FaGitAlt className="text-orange-400" /> Git</li>
               <li className="flex items-center gap-2"><FaGithub className="text-white" /> GitHub</li>
             </ul>
