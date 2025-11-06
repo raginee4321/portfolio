@@ -1,5 +1,6 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
+import kanban from '../assets/kanban.png';  // Correct import of image
 
 export const Projects = () => {
   const items = [
@@ -8,12 +9,12 @@ export const Projects = () => {
       title: 'Kanban Board Component', 
       description: 'An interactive Kanban board built with React and Storybook, featuring drag-and-drop task management and customizable columns.', 
       tech: ['React', 'Storybook', 'Vite'], 
-      image: '/assets/kanbanboard.png', // replace with your actual image path
+      image: kanban,  // Use imported image variable here
       repo: 'https://github.com/raginee4321/kanban-component-raginee', 
       live: 'https://kanbanboardraginee.netlify.app/', 
       storybook: 'https://raginee4321.github.io/kanban-component-raginee/?path=/story/components-kanbanboard--interactive-playground'
     }
-  ]
+  ];
 
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-transparent to-transparent">
@@ -55,5 +56,5 @@ export const Projects = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
